@@ -228,7 +228,15 @@ export default function Home() {
 
       <footer className="site-credit">
         <span>
-          Made by <span className="credit-name">Emma Vellard</span>
+          Made by{' '}
+          <a
+            className="credit-name"
+            href="https://www.emmavellard.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Emma Vellard
+          </a>
         </span>
         <span aria-hidden="true">·</span>
         <a

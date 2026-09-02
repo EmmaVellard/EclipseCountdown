@@ -454,8 +454,12 @@ h2 {
   color: rgba(244, 235, 220, 0.68);
 }
 
-.credit-name {
+.site-credit .credit-name {
   color: #d9a960;
+}
+
+.site-credit .credit-name:hover {
+  color: #edbd77;
 }
 
 @media (max-width: 760px) {
