@@ -118,7 +118,8 @@ a {
 .topbar,
 .hero,
 .eclipse-visual,
-.details {
+.details,
+.site-credit {
   position: relative;
   z-index: 1;
 }
@@ -402,6 +403,27 @@ h2 {
   line-height: 1.65;
 }
 
+.site-credit {
+  display: flex;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem 2rem;
+  border-top: 1px solid rgba(245, 234, 216, 0.08);
+  justify-content: flex-end;
+  gap: 0.4rem;
+  color: rgba(244, 235, 220, 0.38);
+  font-size: 0.7rem;
+}
+
+.site-credit a {
+  color: inherit;
+  text-underline-offset: 0.2rem;
+}
+
+.site-credit a:hover {
+  color: rgba(244, 235, 220, 0.68);
+}
+
 @media (max-width: 760px) {
   .topbar {
     padding: 1.15rem 1.15rem;
@@ -475,6 +497,11 @@ h2 {
 
   .fact-number {
     margin-top: 3rem;
+  }
+
+  .site-credit {
+    padding-inline: 1.15rem;
+    justify-content: flex-start;
   }
 }
 

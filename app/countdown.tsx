@@ -207,9 +207,20 @@ export default function Home() {
               ends around 2:26 PM.
             </p>
           </article>
-
         </div>
       </section>
+
+      <footer className="site-credit">
+        <span>Made by Emma Vellard</span>
+        <span aria-hidden="true">·</span>
+        <a
+          href="https://github.com/EmmaVellard"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+      </footer>
     </main>
   );
 }
