@@ -15,13 +15,18 @@ const geistMono = Geist_Mono({
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   'https://emmavellard.github.io/EclipseCountdown';
+const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 const socialImageUrl = `${siteUrl.replace(/\/$/, '')}/og.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'In the Shadow of the Sun — Luxor 2027',
+  title: 'Luxor Eclipse 2027',
   description:
     'The countdown to the total solar eclipse over Luxor, Egypt, on August 2, 2027.',
+  icons: {
+    icon: `${assetPrefix}/favicon.svg`,
+    shortcut: `${assetPrefix}/favicon.svg`,
+  },
   alternates: {
     canonical: siteUrl,
   },
