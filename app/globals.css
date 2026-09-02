@@ -454,6 +454,10 @@ h2 {
   color: rgba(244, 235, 220, 0.68);
 }
 
+.credit-name {
+  color: #d9a960;
+}
+
 @media (max-width: 760px) {
   .topbar {
     padding: 1.15rem 1.15rem;

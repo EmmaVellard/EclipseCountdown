@@ -112,10 +112,10 @@ export default function Home() {
         <div className="top-actions">
           <a
             className="github-button"
-            href="https://github.com/EmmaVellard"
+            href="https://github.com/EmmaVellard/EclipseCountdown"
             target="_blank"
             rel="noreferrer"
-            aria-label="Emma Vellard on GitHub"
+            aria-label="EclipseCountdown repository on GitHub"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -227,10 +227,12 @@ export default function Home() {
       </section>
 
       <footer className="site-credit">
-        <span>Made by Emma Vellard</span>
+        <span>
+          Made by <span className="credit-name">Emma Vellard</span>
+        </span>
         <span aria-hidden="true">·</span>
         <a
-          href="https://github.com/EmmaVellard"
+          href="https://github.com/EmmaVellard/EclipseCountdown"
           target="_blank"
           rel="noreferrer"
         >
