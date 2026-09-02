@@ -5,10 +5,8 @@ import Image from 'next/image';
 import {
   CalendarPlus,
   Check,
-  ChevronDown,
   MapPin,
   Share2,
-  Sparkles,
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -54,7 +52,7 @@ export default function Home() {
 
   const shareText = useMemo(
     () =>
-      'We’re counting down to the total solar eclipse in Luxor on August 2, 2027 — come watch the clock with us!',
+      'Countdown to the total solar eclipse in Luxor on August 2, 2027.',
     [],
   );
 
@@ -125,7 +123,6 @@ export default function Home() {
 
       <section id="top" className="hero" aria-labelledby="page-title">
         <div className="eyebrow">
-          <Sparkles aria-hidden="true" />
           <span>Total solar eclipse</span>
         </div>
 
@@ -136,8 +133,8 @@ export default function Home() {
         </h1>
 
         <p className="intro">
-          On August 2, 2027, daylight will turn to darkness over Luxor. Shall we
-          meet beneath the Moon’s shadow?
+          On August 2, 2027, daylight will turn to darkness over Luxor. This page
+          keeps track of the time until totality.
         </p>
 
         <div className="countdown" role="timer" aria-live="off">
@@ -169,9 +166,6 @@ export default function Home() {
             <CalendarPlus />
             Add to calendar
           </Button>
-          <a className="discover-link" href="#details">
-            Explore the event <ChevronDown aria-hidden="true" />
-          </a>
         </div>
       </section>
 
@@ -192,21 +186,16 @@ export default function Home() {
 
       <section id="details" className="details" aria-labelledby="details-title">
         <div className="details-heading">
-          <p className="section-number">01 — The moment</p>
-          <h2 id="details-title">
-            Six minutes when
-            <br />
-            <em>everything stops.</em>
-          </h2>
+          <h2 id="details-title">What to know</h2>
         </div>
 
         <div className="fact-grid">
-          <article className="fact-card featured-fact">
+          <article className="fact-card">
             <p className="fact-kicker">Totality in Luxor</p>
             <p className="fact-number">6:22</p>
             <p className="fact-copy">
-              Six minutes and twenty-two seconds in the Moon’s shadow — a rare
-              celestial spectacle in the heart of Egypt.
+              Six minutes and twenty-two seconds with the Sun completely covered
+              by the Moon.
             </p>
           </article>
 
@@ -219,29 +208,8 @@ export default function Home() {
             </p>
           </article>
 
-          <article className="fact-card safety-card">
-            <p className="fact-kicker">Watch safely</p>
-            <p className="safety-title">Eclipse glasses are essential.</p>
-            <p className="fact-copy">
-              Never look directly at the Sun without proper eye protection,
-              except during the brief phase of complete totality.
-            </p>
-          </article>
         </div>
       </section>
-
-      <footer>
-        <p>A moment to share with everyone standing beneath the same shadow.</p>
-        <Button
-          type="button"
-          variant="outline"
-          size="lg"
-          onClick={shareSite}
-          className="share-button footer-share"
-        >
-          <Share2 /> Share the countdown
-        </Button>
-      </footer>
     </main>
   );
 }
