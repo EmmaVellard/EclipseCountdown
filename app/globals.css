@@ -156,9 +156,15 @@ a {
   font-size: 0.72rem;
 }
 
-.share-button {
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.share-button,
+.github-button {
   height: 2.65rem;
-  padding-inline: 1rem;
   border-color: rgba(245, 234, 216, 0.2);
   border-radius: 999px;
   background: rgba(18, 21, 36, 0.46);
@@ -166,9 +172,33 @@ a {
   backdrop-filter: blur(14px);
 }
 
-.share-button:hover {
+.share-button {
+  padding-inline: 1rem;
+}
+
+.github-button {
+  display: grid;
+  width: 2.65rem;
+  place-items: center;
+  border-style: solid;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+.github-button svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.share-button:hover,
+.github-button:hover {
   border-color: rgba(242, 178, 93, 0.48);
   background: rgba(245, 234, 216, 0.08);
+}
+
+.github-button:focus-visible {
+  outline: 2px solid rgba(242, 178, 93, 0.75);
+  outline-offset: 2px;
 }
 
 .hero {
