@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { join } from 'node:path';
 
 const repositoryName =
-  process.env.GITHUB_REPOSITORY?.split('/').at(-1) ?? 'eclipse-luxor-2027';
+  process.env.GITHUB_REPOSITORY?.split('/').at(-1) ?? 'EclipseCountdown';
 
 const build = spawnSync(
   process.execPath,

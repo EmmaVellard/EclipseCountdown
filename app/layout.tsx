@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  'https://eclipse-louxor-2027.emma-vellard.chatgpt.site';
+  'https://emmavellard.github.io/EclipseCountdown';
 const socialImageUrl = `${siteUrl.replace(/\/$/, '')}/og.png`;
 
 export const metadata: Metadata = {

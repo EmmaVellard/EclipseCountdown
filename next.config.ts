@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 const isGitHubPages = process.env.GITHUB_PAGES === 'true';
 const repositoryName =
-  process.env.GITHUB_REPOSITORY?.split('/').at(-1) ?? 'eclipse-luxor-2027';
+  process.env.GITHUB_REPOSITORY?.split('/').at(-1) ?? 'EclipseCountdown';
 const assetPrefix = isGitHubPages ? `/${repositoryName}` : '';
 
 const nextConfig: NextConfig = {

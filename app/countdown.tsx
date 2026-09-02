@@ -79,7 +79,7 @@ export default function Home() {
       'VERSION:2.0',
       'PRODID:-//Luxor 2027//Total solar eclipse//EN',
       'BEGIN:VEVENT',
-      'UID:eclipse-louxor-2027@example.com',
+      'UID:eclipse-countdown@example.com',
       'DTSTAMP:20260902T170000Z',
       'DTSTART:20270802T100200Z',
       'DTEND:20270802T100900Z',
@@ -92,7 +92,7 @@ export default function Home() {
     const blob = new Blob([calendar], { type: 'text/calendar;charset=utf-8' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'luxor-eclipse-2027.ics';
+    link.download = 'eclipse-countdown.ics';
     link.click();
     URL.revokeObjectURL(link.href);
   }
