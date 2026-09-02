@@ -12,37 +12,41 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  'https://eclipse-louxor-2027.emma-vellard.chatgpt.site';
+const socialImageUrl = `${siteUrl.replace(/\/$/, '')}/og.png`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    'https://eclipse-louxor-2027.emma-vellard.chatgpt.site',
-  ),
-  title: 'Sous l’ombre du Soleil — Louxor 2027',
+  metadataBase: new URL(siteUrl),
+  title: 'In the Shadow of the Sun — Luxor 2027',
   description:
-    'Le compte à rebours jusqu’à l’éclipse solaire totale du 2 août 2027 à Louxor, en Égypte.',
+    'The countdown to the total solar eclipse over Luxor, Egypt, on August 2, 2027.',
   alternates: {
-    canonical: '/',
+    canonical: siteUrl,
   },
   openGraph: {
     type: 'website',
-    locale: 'fr_FR',
-    title: 'Sous l’ombre du Soleil — Louxor 2027',
+    locale: 'en_US',
+    url: siteUrl,
+    title: 'In the Shadow of the Sun — Luxor 2027',
     description:
-      'Le compte à rebours jusqu’à l’éclipse solaire totale du 2 août 2027 à Louxor, en Égypte.',
+      'The countdown to the total solar eclipse over Luxor, Egypt, on August 2, 2027.',
     images: [
       {
-        url: '/og.png',
+        url: socialImageUrl,
         width: 1731,
         height: 906,
-        alt: 'Sous l’ombre du Soleil — Louxor, 2 août 2027 à 13:05',
+        alt: 'In the Shadow of the Sun — Luxor, August 2, 2027 at 1:05 PM',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sous l’ombre du Soleil — Louxor 2027',
+    title: 'In the Shadow of the Sun — Luxor 2027',
     description:
-      'Le compte à rebours jusqu’à l’éclipse solaire totale du 2 août 2027 à Louxor, en Égypte.',
-    images: ['/og.png'],
+      'The countdown to the total solar eclipse over Luxor, Egypt, on August 2, 2027.',
+    images: [socialImageUrl],
   },
 };
 
@@ -52,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="dark">
+    <html lang="en" className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
