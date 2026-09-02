@@ -1,15 +1,18 @@
 # EclipseCountdown
 
-A shareable countdown to the total solar eclipse over Luxor, Egypt, on August 2, 2027.
+A simple countdown for the total solar eclipse in Luxor, Egypt, on August 2, 2027.
 
-## GitHub Pages
+[Open the countdown](https://emmavellard.github.io/EclipseCountdown/)
 
-The repository includes a GitHub Actions workflow that builds and publishes the site automatically. Once GitHub Pages is configured to use **GitHub Actions**, every push to `main` publishes a fresh version.
+![In the Shadow of the Sun — Luxor, August 2, 2027](public/og.png)
 
-To verify the static export locally:
+## The eclipse
 
-```sh
-GITHUB_REPOSITORY=EmmaVellard/EclipseCountdown npm run build:pages
-```
+- **Date:** August 2, 2027
+- **Location:** Luxor, Egypt
+- **Totality:** Around 1:05 PM local time
+- **Duration:** Approximately 6 minutes and 22 seconds
 
-The generated static site is written to `dist/client/`.
+## On the page
+
+Follow the live countdown, add the eclipse to your calendar, or share the page with friends.
