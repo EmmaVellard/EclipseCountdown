@@ -15,4 +15,4 @@ A simple countdown for the total solar eclipse in Luxor, Egypt, on August 2, 202
 
 ## On the page
 
-Follow the live countdown, add the eclipse to your calendar, or share the page with friends.
+Follow the live countdown, add the eclipse to your calendar, or share the page.
